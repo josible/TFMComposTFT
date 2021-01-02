@@ -1,0 +1,35 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">ComposTFT</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul id="headerUl" class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                  <span class="sr-only"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/designer">Diseñador</a>
+              </li>
+              <li class="nav-item">
+                <a id="log" class="nav-link" href="/login">login</a>
+              </li>
+              
+            </ul>
+            <div (click)="logOff()"><i id="powerOff" class="fas fa-power-off" style="color: red; display:none;" ></i></div>
+          </div>
+        </div>
+      </nav>
+     
+      <!-- Header -->
+      <header class="head py-5 mb-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <img class="col-md-12" src="../../../assets/images/cap.png" >
+          </div>
+        </div>
+      </header>

@@ -1,0 +1,37 @@
+@import "~bootstrap/scss/bootstrap";
+.head{
+    background-color: black;
+  }
+  .tft-champion, .tft-champion-box {
+    position: relative;
+    display: inline-block;
+  }
+  .guide-meta__deck__column.champions {
+    margin-left: -4px;
+    margin: 0 auto;
+    
+  }
+  .guide-meta__deck__column {
+    vertical-align: middle;
+    
+  }
+  .mr-2, .mx-2 {
+    margin-right: .5rem!important;
+  }
+  .tft-champion {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #111;
+    overflow: hidden;
+    text-align: center;
+    margin-left: 4px;
+    vertical-align: middle;
+    border-radius: 6px;
+  }
+  .container{
+    position: relative;
+    
+  }
+  body{
+    background-color:black;
+  }

@@ -1,0 +1,92 @@
+<body>
+    
+
+<app-header></app-header> 
+
+    <div cdkDropListGroup>
+        <div class="container">
+
+            <div id="rombo" class="row justify-content-center col-12 champboard"
+              cdkDropList
+              [cdkDropListData]="done"
+              (cdkDropListDropped)="drop($event)">
+              <div   class="row" *ngFor="let item of done" cdkDrag>
+                <img src="//cdn.lolchess.gg/images/tft/champions/set4/{{item.ChampName}}.png" class="champField" alt={{item.ChampName}}></div>
+  
+            </div>
+          
+      
+          <div class="row  justify-content-center champPool  col-12" 
+            cdkDropList
+            [cdkDropListData]="champs"
+            (cdkDropListDropped)="drop($event)">
+            <div *ngFor="let champ of champs" cdkDrag>
+                <img src="//cdn.lolchess.gg/images/tft/champions/set4/{{champ.ChampName}}.png" class="champImg"alt={{champ.ChampName}}> </div>
+          </div>
+        </div>
+        <div class="row  justify-content-center col-12"> 
+            <button type="button" class="btn btn-success" (click)="createNewCompUser()">Guardar</button>
+        </div>
+    </div> 
+    
+ <!--   <div class="container">
+<div id="rombo" class="row justify-content-center">
+    <div  class="row">        
+            <div>
+                <img src="//cdn.lolchess.gg/images/tft/champions/set4/Ashe.png" class="champField" > 
+            </div>
+            <div class="champField"></div>
+            <div class="champField"></div>
+            <div class="champField"></div>
+            <div class="champField"></div>
+            <div class="champField"></div>
+            <div class="champField"></div>      
+    </div>
+    <div class="row">        
+        <div class="champField"></div>
+        <div class="champField"></div>
+        <div class="champField"></div>
+        <div class="champField"></div>
+        <div class="champField"></div>
+        <div class="champField"></div>
+        <div class="champField"></div>      
+</div>
+<div class="row">        
+    <div class="champField"></div>
+    <div class="champField"></div>
+    <div class="champField"></div>
+    <div class="champField"></div>
+    <div class="champField"></div>
+    <div class="champField"></div>
+    <div class="champField"></div>      
+</div>
+<div class="row">        
+    <div class="champField"></div>
+    <div class="champField"></div>
+    <div class="champField"></div>
+    <div class="champField"></div>
+    <div class="champField"></div>
+    <div class="champField"></div>
+    <div class="champField"></div>      
+</div>
+<div class="row">        
+    <div class="champField"></div>
+    <div class="champField"></div>
+    <div class="champField"></div>
+    <div class="champField"></div>
+    <div class="champField"></div>
+    <div class="champField"></div>
+    <div class="champField"></div>      
+</div>
+</div>
+    <div class="row justify-content-center champPool">
+            <a *ngFor="let champ of champs">
+                <div class="bg-black">
+                    <img src="//cdn.lolchess.gg/images/tft/champions/set4/{{champ.ChampName}}.png" class="champImg"alt={{champ.ChampName}}> 
+                </div>
+            </a>
+    </div>
+</div> -->
+
+<app-footer></app-footer>
+</body>
