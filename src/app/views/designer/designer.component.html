@@ -13,10 +13,9 @@
               <div   class="row" *ngFor="let item of done" cdkDrag>
                 <img src="//cdn.lolchess.gg/images/tft/champions/set4/{{item.ChampName}}.png" class="champField" alt={{item.ChampName}}></div>
   
-            </div>
-          
+            </div>       
       
-          <div class="row  justify-content-center champPool  col-12" 
+          <div class="row justify-content-center champPool  col-12" 
             cdkDropList
             [cdkDropListData]="champs"
             (cdkDropListDropped)="drop($event)">
@@ -24,9 +23,10 @@
                 <img src="//cdn.lolchess.gg/images/tft/champions/set4/{{champ.ChampName}}.png" class="champImg"alt={{champ.ChampName}}> </div>
           </div>
         </div>
-        <div class="row  justify-content-center col-12"> 
-            <button type="button" class="btn btn-success" (click)="createNewCompUser()">Guardar</button>
-        </div>
+        <span class="row  justify-content-center col-12"> 
+           <input #compName type="text" placeholder="Nombre composición" >            
+            <button type="button" aria-placeholder="" class="btn btn-success" (click)="createNewCompUser(compName.value)">Guardar</button>
+        </span>
     </div> 
     
  <!--   <div class="container">

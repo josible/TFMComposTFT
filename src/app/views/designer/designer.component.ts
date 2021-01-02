@@ -57,11 +57,10 @@ export class DesignerComponent implements OnInit {
     }
     
   }
-  createInsert(){
-    var user = JSON.parse(localStorage.getItem('datos'));
-
-    
+  createInsert(inputCompName){
+    var user = JSON.parse(localStorage.getItem('datos'));    
     this.newComp.IDUSer = user[0]['IDUser'];
+    this.newComp.CompName = inputCompName;
     let numberChamp = 1
     for(let o of this.done){
       if(numberChamp == 1){this.newComp.champ1 = o['ChampName'];}
@@ -78,9 +77,9 @@ export class DesignerComponent implements OnInit {
     }
     
   }
-createNewCompUser(){
+createNewCompUser(inputCompName){  
   // Creamos el objeto.
-  this.createInsert();
+  this.createInsert(inputCompName);
   // Llamamos al ws para la inserción.
   this.api.NewCompsUser(JSON.parse(JSON.stringify(this.newComp))).subscribe(data => {
     console.log(data);

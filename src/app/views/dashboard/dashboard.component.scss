@@ -1,7 +1,10 @@
 @import "~bootstrap/scss/bootstrap";
-.head{
-    background-color: black;
-  }
+body{
+  background-color: black;
+}
+h1{
+  color: white;
+}
   .tft-champion, .tft-champion-box {
     position: relative;
     display: inline-block;

@@ -1,9 +1,11 @@
+<body>
 <app-header></app-header> 
-<h1 id="title"></h1>
+<h1 id="title" class="text-center"></h1>
 <div class="container">
     <a *ngFor="let comp of comps">
-        <div class="guide-meta__deck__column champions mr-2 bg-dark d-flex justify-content-center border border-white">       
-          <div class="text-white align-middle"> <h2>{{comp.IDComp}}</h2></div> 
+      <h2 class="text-center text-white">{{comp.CompUserName}}</h2>
+        <div class="row guide-meta__deck__column champions mr-2 bg-dark d-flex justify-content-center border border-white">       
+          
           <div class="tft-champion-box">
             <img class="card-img-top tft-champion" src="//cdn.lolchess.gg/images/tft/champions/set4/{{comp.Champ1}}.png" alt={{comp.Champ1}}>      
           </div>
@@ -33,3 +35,4 @@
         </a>
       </div>
     <app-footer></app-footer>
+  </body>

@@ -20,7 +20,7 @@ export class DashboardComponent implements OnInit {
     var guardado = JSON.parse(localStorage.getItem('datos'));    
     if(!guardado){this.changeText("Acceso no permitido, diríjase al apartado de log");}
     else{
-      this.changeText("Nos alegramos de volver a verte " + guardado[0]['UserName']);
+      this.changeText(guardado[0]['UserName'] + " composiciones");
       this.compsVerification(guardado);
     }
   }
