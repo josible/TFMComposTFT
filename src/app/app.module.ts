@@ -10,6 +10,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
 import {DemoMaterialModule} from './views/designer/material-module';
 import { RegisterComponent } from './views/register/register.component';
+import { LearnComponent } from './views/learn/learn.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { RegisterComponent } from './views/register/register.component';
     HeaderComponent,
     FooterComponent,
     routingComponents,
-    RegisterComponent
+    RegisterComponent,
+    LearnComponent
   ],
   imports: [
     BrowserModule,

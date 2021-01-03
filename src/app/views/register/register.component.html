@@ -10,15 +10,16 @@
   
       <!-- Icon -->
       <div class="fadeIn first">
-        
+        <p id="errorHeader"></p>
       </div>
   
       <!-- Login Form -->
       <form method="post" [formGroup] = "registerForm" (ngSubmit)="onRegister(registerForm.value)"> 
-        <input type="text" id="login" class="fadeIn second" placeholder="user" formControlName="usuario">
-        <input type="text" id="email" class="fadeIn second" placeholder="email" formControlName="email">
-        <input type="text" id="email2" class="fadeIn second" placeholder="Repetir mail" formControlName="email2">
-        <input type="password" id="password" class="fadeIn third" placeholder="password" formControlName="password">
+        <input type="text" id="login" class="fadeIn second" placeholder="Nombre de usuario" formControlName="usuario">
+        <input type="text" id="email" class="fadeIn second" placeholder="Email" formControlName="email">
+        <input type="text" id="email2" class="fadeIn second" placeholder="Repetir Email" formControlName="email2">
+        <input type="password" id="password" class="fadeIn third" placeholder="Contraseña" formControlName="password">
+        <input type="password" id="password2" class="fadeIn third" placeholder="Repetir contraseña" formControlName="password2">
         <input type="submit" class="fadeIn fourth" value="Registrar">
       </form>
   

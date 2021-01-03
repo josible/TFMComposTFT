@@ -5,7 +5,7 @@
 
     <div cdkDropListGroup>
         <div class="container">
-
+            <h1 id="titleDesigner"></h1>
             <div id="rombo" class="row justify-content-center col-12 champboard"
               cdkDropList
               [cdkDropListData]="done"
@@ -23,7 +23,8 @@
                 <img src="//cdn.lolchess.gg/images/tft/champions/set4/{{champ.ChampName}}.png" class="champImg"alt={{champ.ChampName}}> </div>
           </div>
         </div>
-        <span class="row  justify-content-center col-12"> 
+        <p id="errorHeader"></p>
+        <span id="saveComp" class="row  justify-content-center col-12"> 
            <input #compName type="text" placeholder="Nombre composición" >            
             <button type="button" aria-placeholder="" class="btn btn-success" (click)="createNewCompUser(compName.value)">Guardar</button>
         </span>

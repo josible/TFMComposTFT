@@ -17,16 +17,16 @@ export class DashboardComponent implements OnInit {
   }
   userVerification(){
     //Obtenemos el objeto de usuario
-    var guardado = JSON.parse(localStorage.getItem('datos'));    
-    if(!guardado){this.changeText("Acceso no permitido, diríjase al apartado de log");}
+    var logUser = JSON.parse(localStorage.getItem('datos'));    
+    if(!logUser){this.changeText("Acceso no permitido, diríjase al apartado de log");}
     else{
-      this.changeText(guardado[0]['UserName'] + " composiciones");
-      this.compsVerification(guardado);
+      this.changeText(logUser[0]['UserName'] + " composiciones");
+      this.compsVerification(logUser);
     }
   }
-  compsVerification(guardado){
+  compsVerification(logUser){
     // Comprobamos si el usuario tiene composiciones
-    this.api.getCompsUser(guardado).subscribe(data => {
+    this.api.getCompsUser(logUser).subscribe(data => {
       this.comps = data;
       console.log(data);
     });

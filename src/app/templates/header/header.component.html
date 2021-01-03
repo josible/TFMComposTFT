@@ -1,24 +1,24 @@
 <header>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
         <div class="container">
           <a class="navbar-brand" href="#">ComposTFT</a>
           
           
             <ul id="headerUl" class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                  <span class="sr-only"></span>
-                </a>
+              <li id="home" class="nav-item">
+                <a class="nav-link" href="#" (click)="changeActiveNav('home')">Home</a>
               </li>
-              <li class="nav-item">
+              <li id="learn" class="nav-item ">
+                <a class="nav-link" href="/learn">Aprende a jugar</a>
+              </li>
+              <li id="designer" class="nav-item ">
                 <a class="nav-link" href="/designer">Diseñador</a>
               </li>
-              <li class="nav-item">
-                <a id="log" class="nav-link" href="/login">login</a>
+              <li id="login" class="nav-item">
+                <a id="log" class="nav-link" href="/login">Login</a>
               </li>         
               <div (click)="logOff()"><i id="powerOff" class="fas fa-power-off" style="color: red; display:none;" ></i></div>     
-            </ul>
-            
+            </ul>           
           
         </div>
       </nav> 

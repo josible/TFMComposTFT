@@ -17,26 +17,9 @@ export class HeaderComponent implements OnInit {
     //Obtenemos el objeto de usuario
     var guardado = JSON.parse(localStorage.getItem('datos'));    
     if(guardado){
-      var log = document.getElementById("log");
-      log.innerHTML= guardado[0]['UserName'];
-      log.setAttribute("href","/dashboard");
+      this.changeNavAfterLogin("dashboard",guardado[0]['UserName']);
       var powerOff = document.getElementById("powerOff");
       powerOff.style.display = "block"
-
-     /* // Ahora añadimos el logoff
-      var headerUL = document.getElementById("headerUl");
-      var li = document.createElement("li");
-      li.setAttribute("class","nav-item")
-      var a = document.createElement("a");
-      a.setAttribute("id","logOff");
-      a.setAttribute("class","nav-link");
-      a.setAttribute("href","/dashboard");
-      a.innerHTML = "Desconectar";
-      li.appendChild(a);
-      headerUL.appendChild(li);*/
-      
-
-      //document.getElementById("log").innerHTML = guardado[0]['UserName'];
     }
     
   }
@@ -46,7 +29,22 @@ logOff(){
   // Ocultamos el icono
   var powerOff = document.getElementById("powerOff");
       powerOff.style.display = "none"
+  // Volvemos a poner acceso a Log
+  this.changeNavAfterLogin("Login","login");
   // Redirigimos a home
-  this.router.navigate(['/home']);
+  this.router.navigate(['/']);
+}
+
+changeNavAfterLogin(redirect,name){
+  var log = document.getElementById("log");
+  log.innerHTML= name;
+  log.setAttribute("href","/" + redirect);
+
+}
+
+changeActiveNav(navId){
+  var nav = document.getElementById(navId);
+  //nav.setAttribute("class","active");
+  console.log(nav)
 }
 }

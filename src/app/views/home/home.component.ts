@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   constructor(private api:CompostftapiService, private router:Router) { }
 
   ngOnInit(): void {
-    this.api.getCompsForShow().subscribe(data => {
+      this.api.getCompsForShow().subscribe(data => {
       this.comps = data;
       console.log(this.comps);
     });
