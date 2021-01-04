@@ -2,7 +2,7 @@
 body{
     background-color: black;
 }
-p,h1,.figure-caption{
+p,h1,figcaption{
     color:white;
     text-align: center;
 }
@@ -16,4 +16,7 @@ iframe{
 }
 .figure{
     margin-left: 10px;
+}
+img{
+    max-width: 100px;
 }

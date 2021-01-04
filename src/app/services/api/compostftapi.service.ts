@@ -5,8 +5,9 @@ import { CompsI} from '../../models/comps.interface'
 import { ResponseI} from '../../models/response.interface';
 import { HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable, observable} from 'rxjs';
-import { CompsForShowI} from '../../models/compsForShow.interface'
-import {  CompsUserI} from '../../models/compsUser.interface'
+import { CompsForShowI} from '../../models/compsForShow.interface';
+import {  CompsUserI} from '../../models/compsUser.interface';
+import { StreamersI} from '../../models/streamers.interfase';
 @Injectable({
   providedIn: 'root'
 })
@@ -48,8 +49,10 @@ export class CompostftapiService {
   NewCompsUser(newComp:CompsUserI):Observable<ResponseI>{
     let ws = this.url + "newCompsUser";
     return this.http.post<ResponseI>(ws,newComp);
-
   }
-
+  getAllStreamers():Observable<StreamersI[]>{
+    let ws = this.url + "streamers";
+    return this.http.get<StreamersI[]>(ws);
+  }
   
 }

@@ -21,20 +21,15 @@ export class DashboardComponent implements OnInit {
     if(!logUser){this.changeText("Acceso no permitido, diríjase al apartado de log");}
     else{
       this.changeText(logUser[0]['UserName'] + " composiciones");
-      this.compsVerification(logUser);
+      this.compsUser(logUser);
     }
   }
-  compsVerification(logUser){
+  compsUser(logUser){
     // Comprobamos si el usuario tiene composiciones
     this.api.getCompsUser(logUser).subscribe(data => {
       this.comps = data;
       console.log(data);
     });
-
-
-    // Si no encontramos ninguna pondremos un mensaje
-
-    // En caso de tenerlas las mostraremos
 
   }
   changeText($textForShow){

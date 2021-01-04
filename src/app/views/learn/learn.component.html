@@ -11,14 +11,35 @@
             </div>
         </div>
         <h1>Partidas de interés</h1>
-        <p>En esta sección tenemos partidas de algunos de los mejores streamers, siguirlos es una de las mejores formas de aprender.</p>
-        <div class="row justify-content-md-center">            
+        <p>En esta sección tenemos partidas de algunos de los mejores streamers, seguirlos es una de las mejores formas de aprender.</p>
+        <div class="row justify-content-md-center">   
+            <div class="col col-lg-3 embed-responsive embed-responsive-16by9">      
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/q0O5XHruiek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col col-lg-3 embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cN1HbVuU3EA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>    
+            <div class="col col-lg-3 embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UM9_11Z49pk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                   
+            </div>
+             
         </div>
-
+        <h1>Streamers</h1>
+        <p>Puedes ver en directo y de forma gratuita a los mejores jugadores en Twitch</p>
+        
+            <div class="row justify-content-md-center">  
+                <a *ngFor="let streamer of streamers">
+                <div class="col col-lg-8 "> 
+                    <a href="{{streamer.StreamerUrl}}">
+                    <figure class="text-center">
+                        <img class="rounded-circle" src="../../../assets/images/{{streamer.StreamerImg}}" alt="{{streamer.StreamerName}}" >
+                        <figcaption>{{streamer.StreamerName}}</figcaption>
+                    </figure>
+                    </a>
+                </div>
+                </a>            
+            </div>
+        
     
     </div>
     
