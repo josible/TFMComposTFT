@@ -1,5 +1,7 @@
 export interface ResponseI{
-    IDUSer:string,
+    IDUser:string,
     UserName:string,
-    UserMail:string
+    UserMail:string,
+    Status:string,
+    Comment:string
 }

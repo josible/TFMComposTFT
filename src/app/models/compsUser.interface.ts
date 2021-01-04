@@ -1,5 +1,5 @@
 export interface CompsUserI{
-    IDUSer:string,
+    IDUser:string,
     IDCompUser:string,
     CompName:string,
     champ1:string,

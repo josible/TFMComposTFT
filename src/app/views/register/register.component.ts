@@ -28,11 +28,18 @@ export class RegisterComponent implements OnInit {
     if(validateOk){
       this.api.register(form).subscribe(data => {
         this.responseLog = data;
-        if(this.responseLog != null){   
-          this.router.navigate(['/login']);
+        if(this.responseLog[0].Status == "1"){
+          // En este caso está todo ok, guardamos el usuario en el local
+          localStorage.setItem('datos', JSON.stringify(this.responseLog[0]));
+          // Redirigimos al dashboard
+          this.router.navigate(['/dashboard']);
+          
         }
-        else{console.log("NOK")}
-        console.log(this.responseLog);
+        else {
+          // En caso contrario tenemos un error, mostraremos el mensaje.
+          this.changeText(this.responseLog[0].Comment);
+        }
+               
       });
     }
   }
@@ -42,6 +49,9 @@ validateRegister(form:RegisterI){
   else if(form.password != form.password2){this.changeText("Las contraseñas no coinciden"); return 0}
   else if(form.usuario == ""){this.changeText("Debe indicar un nombre de usuario"); return 0}
   else return 1;
+}
+validateUser(){
+  // Necesitamos saber si el mail ya existe en la bbdd
 }
 changeText($textForShow){
   document.getElementById("errorHeader").innerHTML = $textForShow;

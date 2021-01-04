@@ -17,10 +17,12 @@ export class DashboardComponent implements OnInit {
   }
   userVerification(){
     //Obtenemos el objeto de usuario
-    var logUser = JSON.parse(localStorage.getItem('datos'));    
+    var logUser = JSON.parse(localStorage.getItem('datos'));  
+     
     if(!logUser){this.changeText("Acceso no permitido, diríjase al apartado de log");}
     else{
-      this.changeText(logUser[0]['UserName'] + " composiciones");
+      this.changeText(logUser['UserName'] + " composiciones");
+      //console.log(logUser); 
       this.compsUser(logUser);
     }
   }

@@ -16,8 +16,9 @@ export class HeaderComponent implements OnInit {
   userVerification(){
     //Obtenemos el objeto de usuario
     var guardado = JSON.parse(localStorage.getItem('datos'));    
+    
     if(guardado){
-      this.changeNavAfterLogin("dashboard",guardado[0]['UserName']);
+      this.changeNavAfterLogin("dashboard",guardado['UserName']);
       var powerOff = document.getElementById("powerOff");
       powerOff.style.display = "block"
     }

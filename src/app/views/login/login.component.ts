@@ -26,7 +26,8 @@ export class LoginComponent implements OnInit {
       this.responseLog = data;
       if(this.responseLog != null){
         //Guardamos el objeto en local
-        localStorage.setItem('datos', JSON.stringify(this.responseLog));        
+        localStorage.setItem('datos', JSON.stringify(this.responseLog[0]));    
+            
         this.router.navigate(['/dashboard']);
       }
       else{this.changeText("Usuario o contraseña incorrectos")}

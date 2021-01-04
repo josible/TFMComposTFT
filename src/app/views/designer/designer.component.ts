@@ -13,7 +13,7 @@ export class DesignerComponent implements OnInit {
   champs:ChampsI[];
   newComp:CompsUserI ={
     IDCompUser:"0",
-    IDUSer:"0",
+    IDUser:"0",
     CompName:"",
     champ1:"",
     champ2:"",
@@ -61,7 +61,7 @@ export class DesignerComponent implements OnInit {
   }
   createInsert(inputCompName){
     var user = JSON.parse(localStorage.getItem('datos'));    
-    this.newComp.IDUSer = user[0]['IDUser'];
+    this.newComp.IDUser = user['IDUser'];
     this.newComp.CompName = inputCompName;
     let numberChamp = 1
     for(let o of this.done){
@@ -91,7 +91,7 @@ createNewCompUser(inputCompName){
     this.createInsert(inputCompName);
     // Llamamos al ws para la inserción.
     this.api.NewCompsUser(JSON.parse(JSON.stringify(this.newComp))).subscribe(data => {
-      console.log(data);
+      console.log("Composición" + data);
     });
     //Redireccionamos al dashboard
     this.router.navigate(['/dashboard']); 
