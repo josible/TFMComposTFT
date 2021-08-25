@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": false
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -25,15 +28,12 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/_redirects"
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/@fortawesome/fontawesome-free/js/all.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -96,9 +96,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/@fortawesome/fontawesome-free/js/all.js"
-            ]
+            "scripts": []
           }
         },
         "lint": {
@@ -129,8 +127,5 @@
       }
     }
   },
-  "defaultProject": "compostft",
-  "cli": {
-    "analytics": false
-  }
+  "defaultProject": "compostft"
 }
