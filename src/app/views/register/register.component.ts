@@ -32,8 +32,7 @@ export class RegisterComponent implements OnInit {
           // En este caso está todo ok, guardamos el usuario en el local
           localStorage.setItem('datos', JSON.stringify(this.responseLog[0]));
           // Redirigimos al dashboard
-          this.router.navigate(['/dashboard']);
-          
+          this.router.navigate(['/dashboard']);          
         }
         else {
           // En caso contrario tenemos un error, mostraremos el mensaje.
