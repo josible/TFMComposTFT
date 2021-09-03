@@ -16,6 +16,11 @@ export class JsonServiceService {
     return primaryObject;
 
   }
+  getComps():Observable<any>{    
+    let primaryObject = this.http.get("../../../assets/data/compos.json");
+    return primaryObject;
+
+  }
 
     
   
