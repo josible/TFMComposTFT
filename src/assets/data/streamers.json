@@ -13,5 +13,10 @@
     "StreamerName":"Aluche",
     "Img":"../assets/img/Aluche.JPG",    
     "TwitchLink":"https://www.twitch.tv/aluchegaming"
+},{
+    "IDStreamer":"4",
+    "StreamerName":"Jupeson",
+    "Img":"../assets/img/Jupe.png",    
+    "TwitchLink":"https://www.twitch.tv/jupeson"
 }
 ]
