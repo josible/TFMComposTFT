@@ -32,10 +32,10 @@
         </nav>
         <div class="container">
             <div class="row">
-                <div class="col-10  panel-section" >
+                <div class="col-lg-10 col-mg-12 panel-section" >
                     <div class="row">
-                        <a *ngFor="let compo of compos">
-                            <div class="col-sm card-body">                          
+                        <a class="col-lg-6 col-md-12" *ngFor="let compo of compos">
+                            <div class="card-body">                          
                                 <div class="">
                                     <img src="{{compo.Img}}"  class="img-fluid" alt="Responsive image">
                                     <h5 class="card-title fw-bold">{{compo.CompName}}</h5>
@@ -45,9 +45,9 @@
                    
                     </div>
                 </div>
-                <div class="col-2 panel-section align-items-center " >
+                <div class="col-lg-2 col-mg-12 panel-section  " >
                     <h2>Streamers</h2>
-                    <a *ngFor="let streamer of streamers">
+                    <a  *ngFor="let streamer of streamers">
                         <div class="card-body">
                             <a title="{{streamer.StreamerName}}" href="{{streamer.TwitchLink}}"><img src="{{streamer.Img}}" style="max-width: 50%" class="img-fluid rounded-circle" alt="{{streamer.StreamerName}}"></a>
                             <h5 class="card-title fw-bold">{{streamer.StreamerName}}</h5>
