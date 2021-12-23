@@ -24,4 +24,9 @@
     "CompName":"Syndicate",
     "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/6-Sindicato-Shaco-Akali.png"
 }
+,{
+    "IDComp":"6",
+    "CompName":"Iguana Socialista",
+    "Img":"../assets/img/IguanaComp.png"
+}
 ]
