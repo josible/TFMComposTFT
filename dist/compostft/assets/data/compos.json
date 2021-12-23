@@ -1,23 +1,27 @@
 [{
+    "IDComp":"0",
+    "CompName":"Socialité",
+    "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/Kaisa-3-socialite.png"
+},{
     "IDComp":"1",
-    "CompName":"Abos",
-    "Img":"https://guiadeparche.com/wp-content/uploads/2021/08/Velkoz-abom-gwen.png"
+    "CompName":"Chemas",
+    "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/3-Chemtech-4-matones.png"
 },{
     "IDComp":"2",
-    "CompName":"Kayle",
-    "Img":"https://guiadeparche.com/wp-content/uploads/2021/08/Kayle-6-Caballeros.png"
+    "CompName":"Jhin",
+    "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/De-todito-Jhin.png"
 },{
     "IDComp":"3",
-    "CompName":"Draven",
-    "Img":"https://guiadeparche.com/wp-content/uploads/2021/08/Draven-y-Hecarim.png"
-},{
-    "IDComp":"4",
-    "CompName":"Jax",
-    "Img":"https://guiadeparche.com/wp-content/uploads/2021/08/Jax-4-Caballeros-11.16.png"
+    "CompName":"Reroll Kow",
+    "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/Protectores-y-Francotiradores-3-estrellas.png"
 }
 ,{
+    "IDComp":"4",
+    "CompName":"Mutantes",
+    "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/5-Mutantes-Cho-Malza.png"
+},{
     "IDComp":"5",
-    "CompName":"Nocturne",
-    "Img":"https://guiadeparche.com/wp-content/uploads/2021/07/4-Renacidos-6-Asesinos.png"
+    "CompName":"Syndicate",
+    "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/6-Sindicato-Shaco-Akali.png"
 }
 ]
