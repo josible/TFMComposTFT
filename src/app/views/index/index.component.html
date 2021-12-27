@@ -28,17 +28,19 @@
         </nav>
        
         <div class="container">
-
-            <ng-template style="width: 80vw;"  #mymodal let-modal>
+            <div class="row">
+                <div class="col-lg-10 col-mg-12 panel-section" >
+            <ng-template   #mymodal let-modal>
 
                     <a  *ngFor="let filterComp of filterComps">
                     
-                        <img src="{{filterComp.Img}}"  style="width: 80vw;" alt="Responsive image" id="{{filterComp.IDComp}}">
+                        <img src="{{filterComp.Img}}"  style="max-width: 100%;" alt="Responsive image" id="{{filterComp.IDComp}}">
                         
                     
                     </a>
             </ng-template>
-
+        </div>
+        </div>
             <div class="row">
                 <div class="col-lg-10 col-mg-12 panel-section" >
                     <h2>Actualmente todas las composiciones son originales de <a href="https://guiadeparche.com/composiciones-tft/mejores-composiciones-de-teamfight-tactics/">Guía del parche</a> y <a href="https://www.facebook.com/Babyguana">Babyguana</a> </h2>

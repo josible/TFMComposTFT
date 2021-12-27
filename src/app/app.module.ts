@@ -7,7 +7,6 @@ import { IndexComponent } from './views/index/index.component';
 import { StreamersComponent } from './views/streamers/streamers.component';
 import { HttpClientModule} from '@angular/common/http'
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -19,8 +18,7 @@ import { MatSliderModule } from '@angular/material/slider';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgbModule,
-    MatSliderModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
