@@ -1,4 +1,5 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 .colorheader{
     background-color:#800080;
     margin-bottom: 1%;
@@ -44,10 +45,14 @@ background-size: cover;
 .vertical-center {
   vertical-align:middle;
   align-items: center;
-}
+};
 
 html {
   min-height: 100%;
   position: relative;
+};
+.modal-ku {
+  width: 1000px;
+  margin: auto;
 }
 

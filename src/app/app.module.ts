@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './views/index/index.component';
 import { StreamersComponent } from './views/streamers/streamers.component';
 import { HttpClientModule} from '@angular/common/http'
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule} from '@angular/common/http'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

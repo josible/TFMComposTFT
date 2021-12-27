@@ -1,32 +1,32 @@
 [{
     "IDComp":"0",
-    "CompName":"Socialité",
-    "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/Kaisa-3-socialite.png"
+    "CompName":"Iguana Socialista",
+    "Img":"../assets/img/IguanaComp.png"
 },{
     "IDComp":"1",
-    "CompName":"Chemas",
-    "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/3-Chemtech-4-matones.png"
+    "CompName":"Yone Porreta",
+    "Img":"../assets/img/YonePorreta.png"
 },{
     "IDComp":"2",
     "CompName":"Jhin",
     "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/De-todito-Jhin.png"
 },{
     "IDComp":"3",
+    "CompName":"Chemas",
+    "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/3-Chemtech-4-matones.png"
+},{
+    "IDComp":"4",
     "CompName":"Reroll Kow",
     "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/Protectores-y-Francotiradores-3-estrellas.png"
 }
 ,{
-    "IDComp":"4",
+    "IDComp":"5",
     "CompName":"Mutantes",
     "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/5-Mutantes-Cho-Malza.png"
 },{
-    "IDComp":"5",
+    "IDComp":"6",
     "CompName":"Syndicate",
     "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/6-Sindicato-Shaco-Akali.png"
 }
-,{
-    "IDComp":"6",
-    "CompName":"Iguana Socialista",
-    "Img":"../assets/img/IguanaComp.png"
-}
+
 ]

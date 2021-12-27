@@ -12,6 +12,8 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)
         <link href="css/styles.css" rel="stylesheet" />-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
     </head>
     <body class="bg">
         <nav class="navbar navbar-expand-lg navbar-dark colorheader" >
@@ -30,15 +32,39 @@
                 </div>-->
             </div>
         </nav>
+
         <div class="container">
+               
+            <ng-template  #mymodal let-modal>
+              <!--<div class="modal-header">
+                <h4 class="modal-title" id="modal-basic-title">Bootstrap Modal</h4>
+                <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>-->
+              <!--<div class="modal-body">
+                This is example from ItSolutionStuff.com
+              </div>-->
+              
+              <a  *ngFor="let filterComp of filterComps">
+                
+                    <img src="{{filterComp.Img}}"  style="width: 1200px;" alt="Responsive image" id="{{filterComp.IDComp}}">
+                    
+                
+            </a>
+       
+              <!--<div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+              </div>-->
+            </ng-template>
             <div class="row">
                 <div class="col-lg-10 col-mg-12 panel-section" >
-                    <h2>Actualmente todas las composiciones son originales de <a href="https://guiadeparche.com/composiciones-tft/mejores-composiciones-de-teamfight-tactics/">Guía del parche</a> </h2>
+                    <h2>Actualmente todas las composiciones son originales de <a href="https://guiadeparche.com/composiciones-tft/mejores-composiciones-de-teamfight-tactics/">Guía del parche</a> y <a href="https://guiadeparche.com/composiciones-tft/mejores-composiciones-de-teamfight-tactics/">Babyguana</a> </h2>
                     <div class="row">
-                        <a class="col-lg-6 col-md-12" *ngFor="let compo of compos">
-                            <div class="card-body">                          
-                                <div class="">
-                                    <img src="{{compo.Img}}"  class="img-fluid" alt="Responsive image">
+                        <a class="col-lg-6 col-md-12" *ngFor="let compo of compos; index as i" >
+                            <div class="card-body" >                          
+                                <div class="" >
+                                    <img src="{{compo.Img}}"  class="img-fluid" alt="Responsive image" id="{{compo.IDComp}}" (click)="open(mymodal,i)">
                                     <h5 class="card-title fw-bold">{{compo.CompName}}</h5>
                                 </div>                          
                             </div>
@@ -56,7 +82,11 @@
                     </a>
                 </div>
             </div>
+
+
+            
         </div>
+
         <footer class="py-5 colorheader">
             <div class="container"><p class=" text-center text-white">Copyright &copy; compostft 2021</p></div>
         </footer>
