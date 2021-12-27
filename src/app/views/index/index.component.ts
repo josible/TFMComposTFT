@@ -42,6 +42,7 @@ export class IndexComponent implements OnInit {
     });
   }
   
+  
   private getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
       return 'by pressing ESC';
@@ -59,8 +60,11 @@ export class IndexComponent implements OnInit {
     });
     
   }
+
+  
   
 
   
 
 }
+

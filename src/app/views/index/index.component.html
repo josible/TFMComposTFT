@@ -23,43 +23,25 @@
                 ComposTFT
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
-                    </ul>
-                </div>-->
+
             </div>
         </nav>
-
-        <div class="container">
-               
-            <ng-template  #mymodal let-modal>
-              <!--<div class="modal-header">
-                <h4 class="modal-title" id="modal-basic-title">Bootstrap Modal</h4>
-                <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>-->
-              <!--<div class="modal-body">
-                This is example from ItSolutionStuff.com
-              </div>-->
-              
-              <a  *ngFor="let filterComp of filterComps">
-                
-                    <img src="{{filterComp.Img}}"  style="width: 1200px;" alt="Responsive image" id="{{filterComp.IDComp}}">
-                    
-                
-            </a>
        
-              <!--<div class="modal-footer">
-                <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
-              </div>-->
+        <div class="container">
+
+            <ng-template style="width: 80vw;"  #mymodal let-modal>
+
+                    <a  *ngFor="let filterComp of filterComps">
+                    
+                        <img src="{{filterComp.Img}}"  style="width: 80vw;" alt="Responsive image" id="{{filterComp.IDComp}}">
+                        
+                    
+                    </a>
             </ng-template>
+
             <div class="row">
                 <div class="col-lg-10 col-mg-12 panel-section" >
-                    <h2>Actualmente todas las composiciones son originales de <a href="https://guiadeparche.com/composiciones-tft/mejores-composiciones-de-teamfight-tactics/">Guía del parche</a> y <a href="https://guiadeparche.com/composiciones-tft/mejores-composiciones-de-teamfight-tactics/">Babyguana</a> </h2>
+                    <h2>Actualmente todas las composiciones son originales de <a href="https://guiadeparche.com/composiciones-tft/mejores-composiciones-de-teamfight-tactics/">Guía del parche</a> y <a href="https://www.facebook.com/Babyguana">Babyguana</a> </h2>
                     <div class="row">
                         <a class="col-lg-6 col-md-12" *ngFor="let compo of compos; index as i" >
                             <div class="card-body" >                          
