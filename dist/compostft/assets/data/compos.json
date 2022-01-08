@@ -1,13 +1,13 @@
 [{
-    "IDComp":"0",
+    "IDComp":"6",
     "CompName":"Iguana Socialista",
     "Img":"../assets/img/IguanaComp.png"
 },{
     "IDComp":"1",
-    "CompName":"Yone Porreta",
-    "Img":"../assets/img/YonePorreta.png"
+    "CompName":"Syndicate",
+    "Img":"https://guiadeparche.com/wp-content/uploads/2021/01/4-Asesinos-5-sindicatos.png"
 },{
-    "IDComp":"2",
+    "IDComp":"5",
     "CompName":"Jhin",
     "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/De-todito-Jhin.png"
 },{
@@ -20,13 +20,13 @@
     "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/Protectores-y-Francotiradores-3-estrellas.png"
 }
 ,{
-    "IDComp":"5",
-    "CompName":"Mutantes",
-    "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/5-Mutantes-Cho-Malza.png"
+    "IDComp":"0",
+    "CompName":"Innovators",
+    "Img":"https://guiadeparche.com/wp-content/uploads/2021/01/5-Innovadores-3-encantadores.png"
 },{
-    "IDComp":"6",
-    "CompName":"Syndicate",
-    "Img":"https://guiadeparche.com/wp-content/uploads/2021/11/6-Sindicato-Shaco-Akali.png"
+    "IDComp":"2",
+    "CompName":"Imperial",
+    "Img":"https://guiadeparche.com/wp-content/uploads/2021/01/Imperiales-3.png"
 }
 
 ]
