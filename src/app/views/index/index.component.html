@@ -28,13 +28,14 @@
         </nav>
        
         <div class="container">
-            <div class="row">
+            <div class="row modal-content">
                 <div class="col-lg-10 col-mg-12 panel-section" >
-            <ng-template   #mymodal let-modal>
+            <ng-template   #mymodal let-modal class="modal-div">
 
                     <a  *ngFor="let filterComp of filterComps">
-                    
-                        <img src="{{filterComp.Img}}"  style="max-width: 100%;" alt="Responsive image" id="{{filterComp.IDComp}}">
+                          
+                            <h2 class="card-title fw-bold">{{filterComp.CompName}}</h2>
+                            <img src="{{filterComp.Img}}"  style="max-width: 100%;" alt="Responsive image" id="{{filterComp.IDComp}}">
                         
                     
                     </a>

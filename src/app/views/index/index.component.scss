@@ -52,11 +52,25 @@ html {
   position: relative;
 };
 
-.myCustomModalClass .modal-dialog {
-  max-width: 80%;
-     width: 80%;
-};
-.imgModal{
-  margin:auto;
-  display:block;
-};
+
+.modal-div{
+  background-color: blue;
+  border-radius: 30px;
+  text-align: center;
+}
+::ng-deep .myCustomModalClass {
+  font-size: 2rem;
+  .modal-dialog { 
+    background-color: rgba(255, 255, 255, 0.7);
+    padding:1rem;
+  }  
+  .modal-content {
+    color: rgba(255, 255, 255, 0.7)
+  }
+  .modal-header {
+    background-color: red;
+  }
+  .modal-body {
+    background-color: green;
+  }
+}
